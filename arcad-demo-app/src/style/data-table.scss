@@ -1,0 +1,92 @@
+@import 'variables.scss';
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 1em 1em 0em 0em;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+}
+
+td:first-child {
+  width: 3em;
+}
+
+tr:nth-child(even){
+  background-color:  rgb($primary-color, 0.1);
+  font-weight: bold;
+}
+
+thead {
+  background-color: $primary-color;
+  display:table-header-group;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #0000001e;
+  cursor: pointer;
+}
+
+
+
+#table-header{
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#search-results-text {
+  color: #0000008a;
+  font-weight: lighter;
+}
+
+th {
+  cursor: pointer;
+}
+
+th:hover {
+  background-color: #0000001e;
+}
+
+#buttons-page-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-page {
+  background-color: rgba($primary-color, 0.7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 0 0.5em 0;
+  min-width: 3em;
+  margin: 0.4em;
+  margin-top: 0 ;
+  cursor: pointer;
+}
+
+.button-page:hover {
+  background-color: $primary-color;
+}
+
+.disabled[class*="button-page"] {
+  background-color: #0000001e;
+  cursor: not-allowed;
+}
+
+.active[class*="button-page"] {
+  background-color: rgba($primary-color, 1);
+}

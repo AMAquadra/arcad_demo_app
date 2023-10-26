@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import './style/variables.scss';
+
+* {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  --font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+}
+
+:root {
+  --toastify-color-info: $primary-color;
+  --toastify-color-success: $valid-color;
+  --toastify-color-error: $invalid-color;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+html, body, .navbar, #root {
+  padding: 0px;
+}
+
+#section-title {
+  width: fit-content;
+  font-size: 2.5em;
+  color: white;
+  color: $primary-color;
+  border-radius: 5px;
+  padding: 5px;
+  border-top: 5px solid $primary-color;
+  border-bottom: 5px solid $primary-color;
+}
+
+.search-bar, #add-button {
+  margin-bottom: 5px;
+}
+
+#view {
+  padding: 0 5% 0 5%;
+}
+
+.not-found-view,
+.building-view {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#add-button {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#add-button:hover {
+  background-color: darken($primary-color, 10%);
+}
+
+input, textarea {
+  background-color: rgba($primary-color, .1);
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
+#about-view {
+  padding: 0 30% 0 30%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
